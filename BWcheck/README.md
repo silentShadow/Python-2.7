@@ -1,5 +1,12 @@
-# Python-2.7
-Random projects in Py2.7
+# BWcheck
+BWcheck will simply provide an user with the visibility of the amount of traffic going to and from their box on a chosen interface.  
+
+A limit (Mb) can be set to notify the user when that threshold has been met.
+
+
+## Future features:
+- An option should be provided to display stats for all interfaces without a limit
+- An audible alert should be made when traffic is nearing it's limit
 
 #### usage: testing-bwcheck.py [-h]  [--help]  [-l]  [-I]  [-i INTERFACE]  [-L LIMIT]
 
