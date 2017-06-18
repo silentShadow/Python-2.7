@@ -32,19 +32,12 @@ THRESHOLD = 0
 
 
 
-def printBar(iteration, total, prefix='Progress:', suffix='Complete', decimals=1, bar_length=30):
-    """
-    @params:
-        Name            Required?       Description
-        iteration       yes             current iteration (Int)
-        total           yes             total iterations (Int)
-        prefix          optional        prefix string (str)
-        suffix          optional        suffix string (str)
-        decimals        optional        positive real number of decimals in %complete (Int)
-        bar_length      optional        char length of bar (Int)
+def printBar(iteration, total, prefix='Progress:', suffix='Complete', bar_length=30):
     """
 
-    str_format = '{0:.' + str(decimals) + 'f}'
+    """
+
+    str_format = '{0:.1f}'
     percents = str_format.format(100 * (iteration / float(total)))
     filled_length = int(round(bar_length * iteration / float(total)))
     fill = '%s█%s' % (GRN, NC) * filled_length + '-' * (bar_length - filled_length)
